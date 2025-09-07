@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .skills span {
+            font-weight: bold;
+            color: #2575fc;
+        }
+        
+        .card {
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 15px;
+        }
+        
+        .is-invalid {
+            border-color: #dc3545 !important;
+        }
+        
+        .error-message {
+            color: #dc3545;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background: linear-gradient(135deg, #6a11cb, #2575fc);">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#hero">Priyanka</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container d-flex flex-wrap">
+            <!-- Left: Text Content -->
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h1 class="display-3 fw-bold">I am Priyanka</h1>
+                <p class="lead fs-3">7th Sem CSE Student from VCET</p>
+                <h3 class="mt-3">"Crafting code today, shaping technology tomorrow."</h3>
+            </div>
+            <!-- Right: Profile Image -->
+            <div class="col-md-6 text-center">
+                <img src="https://www.barbie-collectible.com/wp-content/uploads/2017/03/Barbie-Endless-Hair-Kingdom-Snap-n-Style-Princess-Doll-3.jpg" alt="Priyanka's Profile" class="rounded-circle img-fluid" style="max-width: 300px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="fw-bold mb-4">About Me</h2>
+                    <p>I am a passionate Computer Science student with a strong foundation in coding and problem-solving.</p>
+                    <p>My journey has been driven by curiosity and the ability to adapt quickly to new technologies.</p>
+                    <p>I enjoy working on real-world problems and developing innovative solutions through programming.</p>
+                    <p>Team collaboration and effective communication are my strengths in academic and project work.</p>
+                    <p>I focus on continuous learning to stay updated with the latest industry trends.</p>
+                    <p>My goal is to leverage my skills to contribute positively to the tech community and industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Skills</h2>
+            <p><span>Python:</span> Skilled in writing efficient and scalable code for real-world applications.</p>
+            <p><span>Machine Learning:</span> Experienced in building models to analyze and predict data patterns.</p>
+            <p><span>DevOps:</span> Knowledgeable in CI/CD pipelines and automation for smooth deployment.</p>
+            <p><span>Edge Computing:</span> Familiar with distributed computing and optimization at the edge.</p>
+        </div>
+    </section>
+
+    <!-- Awards and Recognition -->
+    <section id="awards">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Awards & Recognition</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card shadow h-100 p-3">
+                        <h5 class="fw-bold text-primary">Best Coder Award</h5>
+                        <p>Recognized for outstanding coding performance in inter-college competitions.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow h-100 p-3">
+                        <h5 class="fw-bold text-primary">Hackathon Winner</h5>
+                        <p>Secured 1st place in a national-level hackathon with an innovative project.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow h-100 p-3">
+                        <h5 class="fw-bold text-primary">Research Paper Published</h5>
+                        <p>Published research in the field of Machine Learning in a reputed journal.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow h-100 p-3">
+                        <h5 class="fw-bold text-primary">Leadership Recognition</h5>
+                        <p>Awarded for leadership and contribution to student technical communities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Contact Me</h2>
+            <div class="row">
+                <!-- Left: Form -->
+                <div class="col-md-6 contact-form">
+                    <form>
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                        <textarea rows="5" class="form-control" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+                <!-- Right: Info -->
+                <div class="col-md-6">
+                    <h5 class="fw-bold">Address</h5>
+                    <p>VCET, Belagavi, Karnataka</p>
+                    <h5 class="fw-bold">Email</h5>
+                    <p>priyanka@example.com</p>
+                    <h5 class="fw-bold">Mobile</h5>
+                    <p>+91 9876543210</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Validate Contact Form Using JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.contact-form form');
+            if (!form) return;
+            form.addEventListener('submit', function(e) {
+                let valid = true;
+                let name = form.querySelector('input[type="text"]');
+                let email = form.querySelector('input[type="email"]');
+                let message = form.querySelector('textarea');
+
+                // Clear previous error messages
+                form.querySelectorAll('.error-message').forEach(el => el.remove());
+
+                // Name validation: only alphabets and spaces
+                if (!name.value.trim() || !/^[A-Za-z ]+$/.test(name.value.trim())) {
+                    let error = document.createElement('div');
+                    error.className = 'error-message';
+                    error.textContent = 'Please enter a valid name (alphabets and spaces only).';
+                    name.classList.add('is-invalid');
+                    name.insertAdjacentElement('afterend', error);
+                    valid = false;
+                } else {
+                    name.classList.remove('is-invalid');
+                }
+
+                // Email validation: must match email pattern
+                let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email.value.trim() || !emailPattern.test(email.value.trim())) {
+                    let error = document.createElement('div');
+                    error.className = 'error-message';
+                    error.textContent = 'Please enter a valid email address.';
+                    email.classList.add('is-invalid');
+                    email.insertAdjacentElement('afterend', error);
+                    valid = false;
+                } else {
+                    email.classList.remove('is-invalid');
+                }
+
+                // Message validation: not empty
+                if (!message.value.trim()) {
+                    let error = document.createElement('div');
+                    error.className = 'error-message';
+                    error.textContent = 'Please enter a message.';
+                    message.classList.add('is-invalid');
+                    message.insertAdjacentElement('afterend', error);
+                    valid = false;
+                } else {
+                    message.classList.remove('is-invalid');
+                }
+
+                if (!valid) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
